@@ -4,13 +4,15 @@
       "type": "bulk_discount",
       "product_code": "TSHIRT",
       "required_items": 3,
-      "discount": 1.0
+      "group_size": 1,
+      "value": 1.0
     },
     {
       "type": "group_discount",
       "product_code": "VOUCHER",
-      "required_items": 2,
-      "discount": 5.0
+      "required_items": 3,
+      "group_size": 3,
+      "value": 5.0
     }
   ]
 }

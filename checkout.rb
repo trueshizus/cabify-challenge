@@ -27,6 +27,10 @@ class Checkout
     net_ammount - discount
   end
 
+  def pretty_total
+    "#{total} #{checkout}"
+  end
+
   private
 
   def net_ammount
