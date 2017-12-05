@@ -14,12 +14,12 @@ class Checkout
   end
 
   def scan(product_code)
-    raise "Unknown product code: #{product_code}" unless valid_code?(product_code)
+    raise ArgumentError, "Unknown product code: #{product_code}" unless valid_code?(product_code)
     checkout << product_code
   end
 
   def remove(product_code)
-    raise "Unknown product code: #{product_code}" unless valid_code?(product_code)
+    raise ArgumentError, "Unknown product code: #{product_code}" unless valid_code?(product_code)
     checkout.delete_at(checkout.index(product_code))
   end
 

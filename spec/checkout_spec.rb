@@ -14,10 +14,18 @@ describe Checkout do
     end
 
     context 'and no discount is active' do
+      it 'calculates the total without discounts' do
+        checkout = Checkout.new()
+        items.each { |item| checkout.scan(item) }
+        expect(checkout.total).to eql(82.50)
+      end
     end
   end
 
   context 'when an item is invalid' do
-
+    it 'raises an error' do
+      checkout = Checkout.new
+      expect { checkout.scan('NEW_ITEM') }.to raise_error(ArgumentError)
+    end
   end
 end
