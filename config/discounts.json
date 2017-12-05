@@ -1,0 +1,16 @@
+{
+  "discounts": [
+    {
+      "type": "bulk_discount",
+      "product_code": "TSHIRT",
+      "required_items": 3,
+      "discount": 1.0
+    },
+    {
+      "type": "group_discount",
+      "product_code": "VOUCHER",
+      "required_items": 2,
+      "discount": 5.0
+    }
+  ]
+}
