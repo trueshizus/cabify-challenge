@@ -12,7 +12,7 @@ This an implementation for https://github.com/cabify/rubyChallenge
 * I added the `:remove` method to Checkout, but it wasn't part of the requirements
 * Products and discounts are stored in a file, the solution does not have buisseness data in its source.
 * The file discounts.json has the following structure:
-```json
+```
 "discounts": [
     {
         "type": "group_discount",
